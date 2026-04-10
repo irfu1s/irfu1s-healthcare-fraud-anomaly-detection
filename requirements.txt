@@ -1,0 +1,15 @@
+pandas
+numpy
+xgboost
+shap
+matplotlib
+seaborn
+requests
+joblib
+streamlit>=1.31.0
+scikit-learn==1.7.1
+tensorflow==2.20.0
+fastapi
+pydantic
+uvicorn
+plotly

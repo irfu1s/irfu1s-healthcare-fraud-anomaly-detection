@@ -1,0 +1,30 @@
+.git
+.gitignore
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local virtual environments and editor files
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Generated outputs and local-only artifacts
+data/raw/
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/samples/*.csv
+
+# Reports/screenshots are not needed inside containers
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg

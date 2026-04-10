@@ -1,0 +1,1 @@
+select count(transaction_id) as total_count  from healthcare_transactions;
