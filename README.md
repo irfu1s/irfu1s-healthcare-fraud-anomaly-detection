@@ -13,6 +13,11 @@ This repository is designed for two use cases:
 1. `Project demo / instructor review`
 2. `Reproducible testing on synthetic evaluation datasets derived from raw healthcare transactions`
 
+## Author
+
+- `Irfan Hussain`
+- GitHub: [@irfu1s](https://github.com/irfu1s)
+
 ## 1. What This Project Does
 
 The system analyzes healthcare billing claims and classifies them into:
