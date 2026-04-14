@@ -155,20 +155,21 @@ Batch evaluation output is saved to:
 ## Evaluation Summary
 
 The current evaluation path uses `mixed_eval_data.csv`, generated from `Healthcare_transactions` only.
+The current saved hybrid anomaly threshold is set to the `92nd percentile`.
 
 ### Top 5 Seed Results
 
-Top 5 observed seed runs:
+Top 5 observed seed runs with the `92nd percentile` threshold:
 
-- `123` -> `92.00%`
-- `451` -> `91.33%`
-- `132` -> `88.67%`
-- `143` -> `88.00%`
-- `389` -> `87.33%`
+- `123` -> `94.00%`
+- `132` -> `90.67%`
+- `451` -> `90.67%`
+- `143` -> `90.00%`
+- `389` -> `89.33%`
 
 Average of these top 5 seed runs:
 
-- `89.47%` binary accuracy
+- `90.93%` binary accuracy
 
 Default review seed:
 
