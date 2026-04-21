@@ -175,6 +175,26 @@ Default review seed:
 
 - `123`
 
+### Imbalanced Stress Test Results
+
+The model was also tested on uneven class distributions to confirm that the result does not depend only on a perfectly balanced `75 normal / 75 anomaly` dataset.
+
+| Test type | Normal rows | Anomaly rows | Seed | Accuracy | Precision | Recall | F1 score | False positives | False negatives |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Anomaly-heavy | `30` | `70` | `123` | `92.00%` | `98.44%` | `90.00%` | `94.03%` | `1` | `7` |
+| Normal-heavy | `70` | `30` | `132` | `95.00%` | `90.32%` | `93.33%` | `91.80%` | `3` | `2` |
+| Anomaly-heavy | `30` | `70` | `143` | `92.00%` | `96.97%` | `91.43%` | `94.12%` | `2` | `6` |
+
+Imbalanced test average:
+
+- `93.00%` binary accuracy
+
+Worst imbalanced test result:
+
+- `92.00%` binary accuracy
+
+These tests show that the model remains stable when the evaluation set is not perfectly balanced. Accuracy is still reported, but precision, recall, F1 score, false positives, and false negatives should be reviewed together because accuracy alone can be misleading on imbalanced datasets.
+
 ## Rebuild Models
 
 Only do this if you want to regenerate model artifacts.
@@ -252,8 +272,8 @@ docker compose down
 
 Note:
 
-- local Python run is recommended for live demo
-- Docker is included for reproducibility and deployment packaging
+- local Python run is suitable for development and direct debugging
+- Docker provides a reproducible packaged environment and is practical for demonstration and review
 
 ## Deployment Direction
 
