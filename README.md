@@ -69,6 +69,8 @@ This project expects these files locally:
 
 If these files already exist, you do not need to retrain.
 
+Note: the SQLite database is a large local asset. If it is not present after cloning the repository, place the provided `healthcare.db` file inside the `database/` folder before starting the API.
+
 ## Environment
 
 Recommended version:
@@ -121,6 +123,7 @@ streamlit run App/app.py
 Recommended review CSVs:
 
 - [data/samples/mixed_eval_data.csv](data/samples/mixed_eval_data.csv)
+- [data/samples/ibm_presentation_test_data.csv](data/samples/ibm_presentation_test_data.csv)
 
 Recommended order:
 
