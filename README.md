@@ -123,12 +123,12 @@ streamlit run App/app.py
 Recommended review CSVs:
 
 - [data/samples/mixed_eval_data.csv](data/samples/mixed_eval_data.csv)
-- [data/samples/ibm_presentation_test_data.csv](data/samples/ibm_presentation_test_data.csv)
+  
 
 Recommended order:
 
 1. `mixed_eval_data.csv` for evaluation
-2. `ibm_presentation_test_data.csv` for quick UI demonstration
+   
 
 ## Evaluation Workflow
 
